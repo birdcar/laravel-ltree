@@ -32,7 +32,7 @@ jobs:
       matrix:
         operating_system: [ubuntu-latest]
         experimental: [false]
-        php_versions: ['8.2', '8.3', '8.3', '8.4']
+        php_versions: [8.3', '8.3', '8.4']
         include:
           - operating_system: ubuntu-latest
             php_versions: '8.4'
@@ -44,7 +44,7 @@ jobs:
 
 
 
-    name: Linter / PHP ${{ matrix.php_versions }} 
+    name: Linter / PHP ${{ matrix.php_versions }}
 
 
 
@@ -113,7 +113,7 @@ jobs:
         experimental: [false]
         operating_system: [ubuntu-latest]
         postgres: ['10', '11', '12', '13', '14', '15']
-        php_versions: ['8.2', '8.3', '8.3', '8.4']
+        php_versions: ['8.3', '8.3', '8.4']
         include:
           - operating_system: ubuntu-latest
             postgres: '16'
